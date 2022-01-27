@@ -16,7 +16,8 @@ void LCD_INIT(void)
 {
 	#if LCD_MODE    ==     _8_BIT_MODE
 	PORT_MODE(LCD_DATA_PORT,OUTPUT);
-	PIN_MODE(LCD_RS_PIN,OUTPUT);
+	//PIN_MODE(LCD_RS_PIN,OUTPUT);     // comment this line
+        PIN_MODE(LCD_EN_PIN,OUTPUT);      //adding this line
 	PIN_MODE(LCD_EN_PIN,OUTPUT);
 	PIN_MODE(LCD_RW_PIN,OUTPUT);
 	PIN_WRITE(LCD_RW_PIN,LOW);
