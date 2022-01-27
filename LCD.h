@@ -19,7 +19,6 @@ void LCD_WRITE_INT(u32);
 void LCD_CLR(void);
 void LCD_GO_TO(u8,u8);
 
-#define _4_BIT_MODE       4
-#define _8_BIT_MODE       8
+
 
 #endif /* LCD_H_ */
